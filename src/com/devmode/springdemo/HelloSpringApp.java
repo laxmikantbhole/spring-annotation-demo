@@ -15,7 +15,7 @@ public class HelloSpringApp {
 		AnnotationConfigApplicationContext configApplicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		// retrieve bean from spring container
-		Animal animal = configApplicationContext.getBean("myDeer", Animal.class);
+		Animal animal = configApplicationContext.getBean("myHorse", Animal.class);
 		
 		// call methods on the bean
 		System.out.println(animal.getSpeed());
